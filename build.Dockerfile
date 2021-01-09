@@ -12,7 +12,7 @@ RUN git pull
 RUN cp dopl/api/* /defs
 
 WORKDIR /defs
-RUN GEN_LANG=node /usr/local/bin/entrypoint.sh -d /defs -o /gen
+RUN GEN_LANG=node /usr/local/bin/entrypoint.sh --with-typescript -d /defs -o /gen
 
 WORKDIR /output
-RUN cp /gen/*.js .
+RUN cp /gen/* .
