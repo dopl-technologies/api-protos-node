@@ -2,7 +2,6 @@
 // file: common.proto
 
 import * as jspb from "google-protobuf";
-import * as google_protobuf_struct_pb from "google-protobuf/google/protobuf/struct_pb";
 import * as google_protobuf_timestamp_pb from "google-protobuf/google/protobuf/timestamp_pb";
 
 export class Device extends jspb.Message {
@@ -217,41 +216,6 @@ export namespace RobotControllerData {
   }
 }
 
-export class NullableRobotControllerData extends jspb.Message {
-  hasNull(): boolean;
-  clearNull(): void;
-  getNull(): google_protobuf_struct_pb.NullValueMap[keyof google_protobuf_struct_pb.NullValueMap];
-  setNull(value: google_protobuf_struct_pb.NullValueMap[keyof google_protobuf_struct_pb.NullValueMap]): void;
-
-  hasData(): boolean;
-  clearData(): void;
-  getData(): RobotControllerData | undefined;
-  setData(value?: RobotControllerData): void;
-
-  getKindCase(): NullableRobotControllerData.KindCase;
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): NullableRobotControllerData.AsObject;
-  static toObject(includeInstance: boolean, msg: NullableRobotControllerData): NullableRobotControllerData.AsObject;
-  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: NullableRobotControllerData, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): NullableRobotControllerData;
-  static deserializeBinaryFromReader(message: NullableRobotControllerData, reader: jspb.BinaryReader): NullableRobotControllerData;
-}
-
-export namespace NullableRobotControllerData {
-  export type AsObject = {
-    pb_null: google_protobuf_struct_pb.NullValueMap[keyof google_protobuf_struct_pb.NullValueMap],
-    data?: RobotControllerData.AsObject,
-  }
-
-  export enum KindCase {
-    KIND_NOT_SET = 0,
-    NULL = 1,
-    DATA = 2,
-  }
-}
-
 export class ElectricalSignalData extends jspb.Message {
   getSignalid(): number;
   setSignalid(value: number): void;
@@ -288,10 +252,10 @@ export class Frame extends jspb.Message {
   setCatheterdataList(value: Array<CatheterData>): void;
   addCatheterdata(value?: CatheterData, index?: number): CatheterData;
 
-  hasNullablerobotcontrollerdata(): boolean;
-  clearNullablerobotcontrollerdata(): void;
-  getNullablerobotcontrollerdata(): NullableRobotControllerData | undefined;
-  setNullablerobotcontrollerdata(value?: NullableRobotControllerData): void;
+  hasRobotcontrollerdata(): boolean;
+  clearRobotcontrollerdata(): void;
+  getRobotcontrollerdata(): RobotControllerData | undefined;
+  setRobotcontrollerdata(value?: RobotControllerData): void;
 
   clearElectricalsignalsList(): void;
   getElectricalsignalsList(): Array<ElectricalSignalData>;
@@ -316,7 +280,7 @@ export class Frame extends jspb.Message {
 export namespace Frame {
   export type AsObject = {
     catheterdataList: Array<CatheterData.AsObject>,
-    nullablerobotcontrollerdata?: NullableRobotControllerData.AsObject,
+    robotcontrollerdata?: RobotControllerData.AsObject,
     electricalsignalsList: Array<ElectricalSignalData.AsObject>,
     created?: google_protobuf_timestamp_pb.Timestamp.AsObject,
   }
