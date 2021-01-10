@@ -29,6 +29,7 @@
     "grpc": "^1.24.4"
   },
   "files": [
+    "dist/",
     "lib/"
   ],
   "publishConfig": {
