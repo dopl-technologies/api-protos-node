@@ -1,9 +1,12 @@
 {
   "name": "@dopl-technologies/api-protos",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Telerobotic APIs in node",
   "main": "./lib/index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "prepublishOnly": "npm run build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dopl-technologies/api-protos-nodejs.git"
