@@ -2,7 +2,7 @@
   "name": "@dopl-technologies/api-protos",
   "version": "1.0.2",
   "description": "Telerobotic APIs in node",
-  "main": "./lib/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
     "prepublishOnly": "npm run build"
