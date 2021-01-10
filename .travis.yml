@@ -1,0 +1,10 @@
+language: node_js
+deploy:
+  provider: npm
+  skip_cleanup: true
+  on:
+    branch: main
+    tags: true
+  email: ryan@dopltechnologies.com
+  api_key:
+    secure: qpygCEIMZlPpAXwVLhyymM7TnmhFOVK+KaQXC8wn0bT2htDa2L+i9kTQ+5ZXj87UkMieKBdVzZptU1RbaO3ahAYvm5JVriq3Wwytj2jM8K3ZSorw491+xB3qv+8p6Vq5ONkNLaQPk5Ju2KCrsgmlHsvsSQhl03omPLpOlT1FZlMIe+sX8Z169vkpVsrXXp2ByIg5x7XwSWHZ+rRL5HJUMpMqTpEe10eYgrNH/ysKXXCIhdvnM+ILX1677tLC/udrpHhKHCm6ydQ/wlCbg3963DD9kMaRfbX8LnGhW8wwNWQqLa6hAL/HD4VeKrLKwGvkahZq/wXwGFUqsTCzQ6gIxIyCLPPFPB7kul0Dir50ncj8K8+igQm2Yls/wP3cfAjdz9nkoAqfw8dY8fyZjd3fBWIqIX8R9MgvrlkEqsQecJf44NznwXQaDqonGqkU+7cbFVDD/15T1ajzvTceGC1C8V56e9xHwPD3jJqelhH8QQbQ6ffBnNSo5zxtKGHhqsNmFw1rJR8Wb1eJ+8ePs+Jhc61KTCQar0+OiJLRsCX0sP+a2gD4CEeQHoK3bn6Dp8kcQX9+afkRyK3FeZHYhGydbhVZDaKDGOIU0CZEyk4cnE1nKrSQEEpjqpxOSJi1herxdGB3foGoAaBaLHq+uOJjReZHnZ+6A1Nc7vTDegI4eT4=

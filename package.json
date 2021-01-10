@@ -1,7 +1,8 @@
 {
   "name": "@dopl-technologies/api-protos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Telerobotic APIs in node",
+  "main": "./lib/index.js",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -23,5 +24,11 @@
   "dependencies": {
     "google-protobuf": "^3.14.0",
     "grpc": "^1.24.4"
+  },
+  "files": [
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
