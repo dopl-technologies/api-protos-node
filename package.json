@@ -23,10 +23,8 @@
     "url": "https://github.com/dopl-technologies/api-protos-nodejs/issues"
   },
   "homepage": "https://github.com/dopl-technologies/api-protos-nodejs#readme",
-  "devDependencies": {},
   "dependencies": {
-    "google-protobuf": "^3.14.0",
-    "grpc": "^1.24.4"
+    "google-protobuf": "^3.20.1"
   },
   "files": [
     "dist/",
@@ -34,5 +32,8 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
   }
 }
