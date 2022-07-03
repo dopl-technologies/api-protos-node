@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/dopl-technologies/api-protos-nodejs#readme",
   "dependencies": {
-    "google-protobuf": "^3.20.1",
-    "grpc": "^1.24.11"
+    "@grpc/grpc-js": "^1.6.7",
+    "google-protobuf": "^3.20.1"
   },
   "files": [
     "dist/",
